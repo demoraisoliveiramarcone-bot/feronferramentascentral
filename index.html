@@ -11,7 +11,37 @@
 
   gtag('config', 'AW-17921482928');
 </script>
-    
+
+   <!-- Event snippet for Visualização de página (1) conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17921482928/J75HCNS-rPAbELDB0OFC',
+      'value': 1.0,
+      'currency': 'BRL'
+  });
+</script>
+
+   <!-- Event snippet for Visualização de página (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17921482928/J75HCNS-rPAbELDB0OFC',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
+   
     <meta charset="UTF-8">
     <title>Loja das Ferramentas Online | Ferragens, Ferramentas e Materiais</title>
     <meta name="description" content="Loja das Ferramentas Online oferece ferramentas, ferragens, materiais elétricos e equipamentos para construção. Atendimento online e em Itu/SP.">
